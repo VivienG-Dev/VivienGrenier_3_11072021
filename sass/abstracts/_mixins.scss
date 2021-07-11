@@ -1,0 +1,61 @@
+// Media Queries
+$landscape-phones: 576px;
+$tablets: 768px;
+$desktops: 992px;
+$large-desktops: 1200px;
+
+@mixin landscape-phones {
+  @media screen and (min-width: #{$landscape-phones}) {
+      @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (min-width: #{$tablets}) {
+      @content;
+  }
+}
+
+@mixin desktops {
+  @media screen and (min-width: #{$desktops}) {
+      @content;
+  }
+}
+
+@mixin large-desktops {
+  @media screen and (min-width: #{$large-desktops}) {
+      @content;
+  }
+}
+
+// Other mixins
+
+@mixin btn-gradient {
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+}
+
+@mixin section-padding {
+  padding: 2rem 1rem;
+}
+
+@mixin box-shadow {
+  box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.22);
+}
+
+@mixin box-shadow-hover {
+  box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.44);
+}
+
+@mixin border-radius {
+  border-radius: 50px;
+}
+
+@mixin text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

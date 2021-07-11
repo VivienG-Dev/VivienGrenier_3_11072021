@@ -1,0 +1,64 @@
+.process-container {
+  background: var(--body-white);
+}
+
+.process {
+  @include section-padding;
+  // background: var(--body-white);
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: auto;
+
+  &__steps {
+    display: flex;
+    flex-direction: column;
+
+    @include desktops {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__step {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: var(--body-background);
+    padding: 15px;
+    @include border-radius;
+    @include box-shadow;
+
+    @include desktops {
+      width: 32%;
+    }
+  }
+
+  &__step:not(:last-child) {
+    margin-bottom: 15px;
+
+    @include desktops {
+      margin-bottom: inherit;
+    }
+  }
+
+  &__number {
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translate(-50%, -50%);
+    background: var(--primary);
+    padding: 3px 8px;
+    @include border-radius;
+    color: #fff;
+  }
+
+  &__icon {
+    width: 20px; // This width is for align text
+    margin: 0 20px 0 10px;
+  }
+}

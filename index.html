@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ohmyfood</title>
+    <!-- Font Anwsome 5-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="navbar">
+        <div id="navbar__logo">
+          <h1><a href="/">ohmyfood</a></h1>
+        </div>
+      </div>
+    </header>
+    <!--Header ends-->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+    </div>
+    <!--Loader ends-->
+    <main class="main">
+      <section class="local">
+        <div class="local__icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="local__city"><span>Paris, Belleville</span></div>
+      </section>
+      <!--Local ends-->
+      <section class="hero">
+        <h2 class="hero__title">Réservez le menu qui vous convient</h2>
+        <p class="hero__text">
+          Découvrez des restaurants d'exception, séléctionnés par nos soins
+        </p>
+        <button class="hero__btn">Explorer nos restaurants</button>
+      </section>
+      <!--Hero ends-->
+      <section class="process-container">
+        <div class="process">
+          <h2 class="process__title">Fonctionnement</h2>
+          <div class="process__steps">
+            <div class="process__step">
+              <div class="process__number">1</div>
+              <div class="process__icon"><i class="fas fa-mobile-alt"></i></div>
+              <span>Choisissez un restaurtant</span>
+            </div>
+            <div class="process__step">
+              <div class="process__number">2</div>
+              <div class="process__icon"><i class="fas fa-list-ul"></i></div>
+              <span>Composez votre menu</span>
+            </div>
+            <div class="process__step">
+              <div class="process__number">3</div>
+              <div class="process__icon"><i class="fas fa-store"></i></div>
+              <span>Dégustez au restaurant</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Process ends-->
+      <section class="restaurants">
+        <h2 class="restaurants__title">Restaurants</h2>
+        <div class="restaurants__cards">
+          <a href="single.html">
+            <div class="card">
+              <span class="badge badge--new">Nouveau</span>
+              <img
+                class="card__img"
+                src="/img/jay-wennington-N_Y88TWmGwA-unsplash-mobile.jpg"
+                alt="La palette du goût"
+              />
+              <div class="card__footer">
+                <div class="card__text">
+                  <h3 class="card__name">La palette du goût</h3>
+                  <span class="card__city">Ménilmontant</span>
+                </div>
+                <div class="card__icon">
+                  <div class="icon">
+                    <svg
+                      class="heart heart-full"
+                      viewBox="0 0 512 512"
+                      width="100"
+                      title="heart"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="Gradient-1"
+                          x1="0"
+                          y1="0"
+                          x2="100%"
+                          y2="0"
+                        >
+                          <stop offset="0%" stop-color="#FF79DA" />
+                          <stop offset="100%" stop-color="#9356DC" />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        fill="url(#Gradient-1)"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                      />
+                    </svg>
+                    <svg
+                      class="heart heart-empty"
+                      viewBox="0 0 512 512"
+                      width="100"
+                      title="heart"
+                    >
+                      <path
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="single.html">
+            <div class="card">
+              <span class="badge badge--new">Nouveau</span>
+              <img
+                class="card__img"
+                src="/img/jay-wennington-N_Y88TWmGwA-unsplash-mobile.jpg"
+                alt="La palette du goût"
+              />
+              <div class="card__footer">
+                <div class="card__text">
+                  <h3 class="card__name">La note enchantée</h3>
+                  <span class="card__city">Charonne</span>
+                </div>
+                <div class="card__icon">
+                  <div class="icon">
+                    <svg
+                      class="heart heart-full"
+                      viewBox="0 0 512 512"
+                      width="100"
+                      title="heart"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="Gradient-1"
+                          x1="0"
+                          y1="0"
+                          x2="100%"
+                          y2="0"
+                        >
+                          <stop offset="0%" stop-color="#FF79DA" />
+                          <stop offset="100%" stop-color="#9356DC" />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        fill="url(#Gradient-1)"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                      />
+                    </svg>
+                    <svg
+                      class="heart heart-empty"
+                      viewBox="0 0 512 512"
+                      width="100"
+                      title="heart"
+                    >
+                      <path
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/">
+            <div class="card">
+              <img
+                class="card__img"
+                src="/img/jay-wennington-N_Y88TWmGwA-unsplash-mobile.jpg"
+                alt="La palette du goût"
+              />
+              <div class="card__footer">
+                <div class="card__text">
+                  <h3 class="card__name">À la française</h3>
+                  <span class="card__city">Cité rouge</span>
+                </div>
+                <div class="card__icon">
+                  <div class="icon">
+                    <svg
+                      class="heart heart-full"
+                      viewBox="0 0 512 512"
+                      width="100"
+                      title="heart"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="Gradient-1"
+                          x1="0"
+                          y1="0"
+                          x2="100%"
+                          y2="0"
+                        >
+                          <stop offset="0%" stop-color="#FF79DA" />
+                          <stop offset="100%" stop-color="#9356DC" />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        fill="url(#Gradient-1)"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                      />
+                    </svg>
+                    <svg
+                      class="heart heart-empty"
+                      viewBox="0 0 512 512"
+                      width="100"
+                      title="heart"
+                    >
+                      <path
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/">
+            <div class="card">
+              <img
+                class="card__img"
+                src="/img/jay-wennington-N_Y88TWmGwA-unsplash-mobile.jpg"
+                alt="La palette du goût"
+              />
+              <div class="card__footer">
+                <div class="card__text">
+                  <h3 class="card__name">Le délice des sens</h3>
+                  <span class="card__city">Folie-Méricourt</span>
+                </div>
+                <div class="card__icon">
+                  <div class="icon">
+                    <svg
+                      class="heart heart-full"
+                      viewBox="0 0 512 512"
+                      width="100"
+                      title="heart"
+                    >
+                      <defs>
+                        <linearGradient
+                          id="Gradient-1"
+                          x1="0"
+                          y1="0"
+                          x2="100%"
+                          y2="0"
+                        >
+                          <stop offset="0%" stop-color="#FF79DA" />
+                          <stop offset="100%" stop-color="#9356DC" />
+                        </linearGradient>
+                      </defs>
+                      <path
+                        fill="url(#Gradient-1)"
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                      />
+                    </svg>
+                    <svg
+                      class="heart heart-empty"
+                      viewBox="0 0 512 512"
+                      width="100"
+                      title="heart"
+                    >
+                      <path
+                        d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!--Restaurants ends-->
+    </main>
+    <!--Main ends-->
+    <footer class="footer">
+      <div class="footer__logo">
+        <a href="/">ohmyfood</a>
+      </div>
+      <div class="footer__links">
+        <ul>
+          <li>
+            <a href="/"
+              ><i class="fas fa-utensils"></i> Proposer un restaurtant</a
+            >
+          </li>
+          <li>
+            <a href="/"
+              ><i class="fas fa-hands-helping"></i> Devenir partenaire</a
+            >
+          </li>
+          <li><a href="/">Mentions légales</a></li>
+          <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!--Footer ends-->
+  </body>
+</html>

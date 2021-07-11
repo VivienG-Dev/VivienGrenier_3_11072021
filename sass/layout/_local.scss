@@ -1,0 +1,16 @@
+.local {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--body-local);
+    padding: 15px;
+
+    &__icon {
+        margin-right: 10px;
+    }
+
+    &__city {
+        font-size: 1rem;
+    }
+}

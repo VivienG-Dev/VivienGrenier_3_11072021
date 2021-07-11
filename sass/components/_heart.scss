@@ -1,0 +1,45 @@
+.heart {
+  fill: var(--body-white);
+  stroke: black;
+  stroke-width: 30;
+  cursor: pointer;
+}
+
+.heart-full {
+  position: absolute;
+  stroke: none;
+}
+
+.heart-empty {
+  position: relative;
+}
+
+.heart-empty:hover {
+  animation: fade-out 0.4s ease-out forwards;
+}
+
+.icon svg {
+  overflow: visible;
+  width: 2rem;
+}
+
+.fade-out {
+  -webkit-animation: fade-out 1s ease-out both;
+  animation: fade-out 1s ease-out both;
+}
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

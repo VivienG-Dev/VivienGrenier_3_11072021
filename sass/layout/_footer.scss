@@ -1,0 +1,39 @@
+.footer {
+  @include section-padding;
+  background: var(--body-footer);
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+
+  @include desktops {
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    color: #fff;
+  }
+
+  &__logo {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-family: "Shrikhand", cursive;
+
+    @include desktops {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__links ul li {
+    list-style: none;
+
+    @include desktops {
+      display: inline-block;
+      margin: 0 20px;
+    }
+  }
+
+  &__links ul li:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

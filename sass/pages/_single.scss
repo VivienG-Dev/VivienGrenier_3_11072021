@@ -1,0 +1,146 @@
+.featured-img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.menu-container {
+  background: var(--body-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  @include section-padding;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: -4rem;
+  border-radius: 20px 20px 0 0;
+  background: var(--body-background);
+  width: 100%;
+  max-width: 1280px;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-family: "Shrikhand", cursive;
+    font-size: 0.9rem;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: "";
+      width: 50px;
+      height: 5px;
+      background: var(--tertiary);
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    @include large-desktops {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+
+    @include large-desktops {
+      width: 32%;
+    }
+  }
+
+  &__item {
+    background-color: white;
+    padding: 15px 0 15px 20px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+
+    &:hover {
+      .menu__check {
+        border-radius: 0 20px 20px 0;
+        margin-right: 0rem;
+        background: var(--tertiary);
+        i {
+          transform: rotate(0deg);
+        }
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    h4 {
+      @include text-overflow;
+    }
+
+    span {
+      @include text-overflow;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__price {
+    margin: 0 20px 0 15px;
+  }
+
+  &__check {
+    transition: all 0.5s ease-in-out;
+    margin: -1rem 0 -1rem 0;
+    padding: 20px;
+    margin-right: -4rem;
+    background: var(--tertiary);
+    i {
+      transition: all 0.5s ease-in-out;
+      transform: rotate(180deg);
+    }
+    color: #fff;
+    font-size: 1.5rem;
+  }
+}
+
+// For animation
+.slide-in-right {
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-20px);
+    opacity: 1;
+  }
+}
