@@ -3,19 +3,19 @@
   stroke: black;
   stroke-width: 30;
   cursor: pointer;
-}
 
-.heart-full {
-  position: absolute;
-  stroke: none;
-}
+  &--full {
+    position: absolute;
+    stroke: none;
+  }
 
-.heart-empty {
-  position: relative;
-}
+  &--empty {
+    position: relative;
 
-.heart-empty:hover {
-  animation: fade-out 0.4s ease-out forwards;
+    &:hover {
+      animation: fade-out 0.4s ease-out forwards;
+    }
+  }
 }
 
 .icon svg {
@@ -27,6 +27,7 @@
   -webkit-animation: fade-out 1s ease-out both;
   animation: fade-out 1s ease-out both;
 }
+// Animations
 @-webkit-keyframes fade-out {
   0% {
     opacity: 1;

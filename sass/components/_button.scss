@@ -1,0 +1,26 @@
+.btn {
+  color: #fff;
+  border: none;
+  @include border-radius;
+  padding: 15px 20px;
+  background: dimgray;
+  @include box-shadow;
+  transition: all 0.3s;
+
+  &--hero {
+    background: linear-gradient(
+        0deg,
+        rgba(147, 86, 220, 0.9),
+        rgba(255, 121, 218, 0.9)
+      );
+
+    &:hover {
+      @include box-shadow-hover;
+      background: linear-gradient(
+        0deg,
+        rgba(146, 86, 220, 0.7),
+        rgba(255, 121, 218, 0.7)
+      );
+    }
+  }
+}

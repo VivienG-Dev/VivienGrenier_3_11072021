@@ -19,38 +19,39 @@
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: var(--primary);
-  -webkit-animation: spin 2s linear ; /* Chrome, Opera 15+, Safari 5+ */
-  animation: spin 2s linear ; /* Chrome, Firefox 16+, IE 10+, Opera */
+  -webkit-animation: spin 2s linear; /* Chrome, Opera 15+, Safari 5+ */
+  animation: spin 2s linear; /* Chrome, Firefox 16+, IE 10+, Opera */
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--secondary);
+    -webkit-animation: spin 3s linear; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 3s linear; /* Chrome, Firefox 16+, IE 10+, Opera */
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: var(--tertiary);
+    -webkit-animation: spin 1.5s linear; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 1.5s linear; /* Chrome, Firefox 16+, IE 10+, Opera */
+  }
 }
 
-#loader:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: var(--secondary);
-  -webkit-animation: spin 3s linear ; /* Chrome, Opera 15+, Safari 5+ */
-  animation: spin 3s linear ; /* Chrome, Firefox 16+, IE 10+, Opera */
-}
-
-#loader:after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 15px;
-  border-radius: 50%;
-  border: 3px solid transparent;
-  border-top-color: var(--tertiary);
-  -webkit-animation: spin 1.5s linear ; /* Chrome, Opera 15+, Safari 5+ */
-  animation: spin 1.5s linear ; /* Chrome, Firefox 16+, IE 10+, Opera */
-}
-
+// Animations
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg); /* Chrome, Opera 15+, Safari 3.1+ */
