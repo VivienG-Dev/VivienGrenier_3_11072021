@@ -83,8 +83,9 @@
         border-radius: 0 20px 20px 0;
         margin-right: 0rem;
         background: var(--tertiary);
-        i {
-          transform: rotate(0deg);
+        div {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
         }
       }
     }
@@ -118,12 +119,13 @@
   &__check {
     transition: all 0.5s ease-in-out;
     margin: -1rem 0 -1rem 0;
-    padding: 20px;
+    padding: 22px 20px;
     margin-right: -4rem;
     background: var(--tertiary);
-    i {
+    div {
       transition: all 0.5s ease-in-out;
-      transform: rotate(180deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
     }
     color: #fff;
     font-size: 1.5rem;
