@@ -4,6 +4,17 @@
   text-align: center;
 
   * {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    padding: 0 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
   }
 }

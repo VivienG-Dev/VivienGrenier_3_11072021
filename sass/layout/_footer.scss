@@ -30,6 +30,19 @@
       display: inline-block;
       margin: 0 20px;
     }
+
+    .icon-utensils-solid {
+      font-size: 1rem;
+      margin-right: .78rem;
+    }
+    .icon-hands-helping-solid {
+      font-size: 0.8rem;
+      margin-right: .5rem;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 
   &__links ul li:not(:last-child) {

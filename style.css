@@ -33,7 +33,7 @@ body {
 }
 
 h1 {
-  font-family: 'Shrikhand', cursive;
+  font-family: 'Shrikhand', cursive, sans-serif;
   font-size: 2rem;
 }
 
@@ -49,7 +49,6 @@ h1 {
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -106,21 +105,25 @@ h1 {
   border-radius: 50px;
   padding: 15px 20px;
   background: dimgray;
-  box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.22);
-  -webkit-box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.22);
-  -moz-box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.22);
+  box-shadow: -1px 0px 10px 1px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: -1px 0px 10px 1px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: -1px 0px 10px 1px rgba(0, 0, 0, 0.22);
   transition: all 0.3s;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(345deg, #9356dc, rgba(255, 121, 218, 0.9));
 }
 
-.btn--hero {
-  background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+.btn:hover {
+  box-shadow: 2px 6px 16px -4px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 2px 6px 16px -4px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 2px 6px 16px -4px rgba(0, 0, 0, 0.44);
+  background: linear-gradient(345deg, rgba(146, 86, 220, 0.7), rgba(255, 121, 218, 0.7));
 }
 
-.btn--hero:hover {
-  box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.44);
-  -webkit-box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.44);
-  -moz-box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.44);
-  background: linear-gradient(0deg, rgba(146, 86, 220, 0.7), rgba(255, 121, 218, 0.7));
+.btn--menu {
+  padding: 15px 55px;
 }
 
 .card {
@@ -352,14 +355,20 @@ h1 {
 
 .badge {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
+  border-radius: 2px;
+  font-weight: 700;
+  box-shadow: -1px 0px 10px 0px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: -1px 0px 10px 0px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: -1px 0px 10px 0px rgba(0, 0, 0, 0.53);
   background: white;
-  padding: 10px 20px;
+  padding: 7px 13px;
 }
 
 .badge--new {
   background: var(--tertiary);
+  color: #018766;
 }
 
 #navbar {
@@ -375,8 +384,9 @@ h1 {
 
 #navbar__arrow {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 5%;
+  font-size: 1.5rem;
 }
 
 #navbar__logo a {
@@ -418,14 +428,15 @@ h1 {
   justify-content: center;
   background-color: var(--body-local);
   padding: 15px;
+  font-size: 1.1rem;
 }
 
 .local__icon {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .local__city {
-  font-size: 1rem;
+  font-weight: 700;
 }
 
 .hero {
@@ -435,7 +446,18 @@ h1 {
 }
 
 .hero * {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.hero__title {
+  padding: 0 2.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.hero__text {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
 }
 
 .process-container {
@@ -471,11 +493,12 @@ h1 {
   display: flex;
   flex-direction: row;
   background: var(--body-background);
-  padding: 15px;
-  border-radius: 50px;
-  box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.22);
-  -webkit-box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.22);
-  -moz-box-shadow: 5px 6px 16px -4px rgba(0, 0, 0, 0.22);
+  padding: 25px;
+  border-radius: 20px;
+  font-weight: 700;
+  box-shadow: -1px 0px 10px 1px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: -1px 0px 10px 1px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: -1px 0px 10px 1px rgba(0, 0, 0, 0.22);
 }
 
 @media screen and (min-width: 992px) {
@@ -484,8 +507,17 @@ h1 {
   }
 }
 
+.process__step:hover {
+  background: #F5EDFF;
+  cursor: pointer;
+}
+
+.process__step:hover .process__icon {
+  color: var(--primary);
+}
+
 .process__step:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 992px) {
@@ -577,14 +609,34 @@ h1 {
   }
 }
 
+.footer__links ul li .icon-utensils-solid {
+  font-size: 1rem;
+  margin-right: .78rem;
+}
+
+.footer__links ul li .icon-hands-helping-solid {
+  font-size: 0.8rem;
+  margin-right: .5rem;
+}
+
+.footer__links ul li a:hover {
+  text-decoration: underline;
+}
+
 .footer__links ul li:not(:last-child) {
   margin-bottom: 10px;
 }
 
 .featured-img {
   width: 100%;
-  height: 50vh;
+  height: 35vh;
   object-fit: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .featured-img {
+    height: 50vh;
+  }
 }
 
 .menu-container {
@@ -612,7 +664,7 @@ h1 {
   justify-content: space-between;
   margin-bottom: 30px;
   font-family: "Shrikhand", cursive;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .menu__title {
@@ -620,6 +672,7 @@ h1 {
   margin-bottom: 20px;
   padding-bottom: 10px;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .menu__title::after {
@@ -628,7 +681,7 @@ h1 {
   bottom: 0;
   content: "";
   width: 50px;
-  height: 5px;
+  height: 4px;
   background: var(--tertiary);
 }
 
@@ -665,6 +718,9 @@ h1 {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  box-shadow: -1px 0px 10px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: -1px 0px 10px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: -1px 0px 10px 1px rgba(0, 0, 0, 0.05);
 }
 
 .menu__item:hover .menu__check {
@@ -700,10 +756,11 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .menu__price {
+  font-weight: bold;
   margin: 0 20px 0 15px;
 }
 
@@ -721,6 +778,11 @@ h1 {
   transition: all 0.5s ease-in-out;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+
+.menu__button {
+  text-align: center;
+  padding: 25px;
 }
 
 .slide-in-right {
