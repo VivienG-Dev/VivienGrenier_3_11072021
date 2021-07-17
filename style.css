@@ -189,7 +189,6 @@ h1 {
 
 .hearts--full:before {
   color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(180deg, rgba(146, 86, 220, 0.7), rgba(255, 121, 218, 0.7));
 }
@@ -428,11 +427,12 @@ h1 {
   justify-content: center;
   background-color: var(--body-local);
   padding: 15px;
-  font-size: 1.1rem;
+  font-size: .8rem;
 }
 
 .local__icon {
   margin-right: 15px;
+  font-size: 1rem;
 }
 
 .local__city {
