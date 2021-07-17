@@ -800,7 +800,6 @@ h1 {
   }
 }
 
-/*=== Trigger  ===*/
 .animate {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -808,7 +807,6 @@ h1 {
   animation-fill-mode: both;
 }
 
-/*==== FADE IN UP ===*/
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
@@ -840,7 +838,6 @@ h1 {
   }
 }
 
-/*=== Optional Delays, change values here  ===*/
 .one {
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;

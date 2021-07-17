@@ -162,7 +162,7 @@
   }
 }
 
-/*=== Trigger  ===*/
+// Trigger
 .animate {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -170,7 +170,7 @@
   animation-fill-mode: both;
 }
 
-/*==== FADE IN UP ===*/
+// FADE IN UP
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
@@ -203,7 +203,7 @@
   }
 }
 
-/*=== Optional Delays, change values here  ===*/
+// Optional delays, change values
 .one {
   -webkit-animation-delay: 0.5s;
   -moz-animation-delay: 0.5s;
