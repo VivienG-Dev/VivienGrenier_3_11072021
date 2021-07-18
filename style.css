@@ -164,6 +164,7 @@ h1 {
   justify-content: center;
   cursor: pointer;
   position: relative;
+  overflow: hidden;
 }
 
 .hearts--empty {
@@ -174,7 +175,7 @@ h1 {
 }
 
 .hearts--empty:hover {
-  animation: fade-out 0.4s ease-out forwards;
+  animation: fade-out .8s ease-out forwards;
 }
 
 .hearts .single {
@@ -185,12 +186,18 @@ h1 {
   font-size: 2rem;
   position: absolute;
   display: block;
+  transform: scale(0.2);
 }
 
 .hearts--full:before {
   color: transparent;
   -webkit-background-clip: text;
   background-image: linear-gradient(180deg, rgba(146, 86, 220, 0.7), rgba(255, 121, 218, 0.7));
+}
+
+.hearts:hover .hearts--full {
+  transform: scale(1);
+  transition: .4s linear;
 }
 
 .fade-out {
