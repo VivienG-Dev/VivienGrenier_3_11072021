@@ -19,7 +19,7 @@
   @include section-padding;
   display: flex;
   flex-direction: column;
-  position: relative;
+  // position: relative;
   margin-top: -4rem;
   border-radius: 20px 20px 0 0;
   background: var(--body-background);
@@ -90,9 +90,7 @@
 
     &:hover {
       .menu__check {
-        border-radius: 0 20px 20px 0;
         margin-right: 0rem;
-        background: var(--tertiary);
         div {
           -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
@@ -129,6 +127,7 @@
 
   &__check {
     transition: all 0.5s ease-in-out;
+    border-radius: 0 20px 20px 0;
     margin: -1rem 0 -1rem 0;
     padding: 22px 20px;
     margin-right: -4rem;
@@ -145,21 +144,6 @@
   &__button {
     text-align: center;
     padding: 25px;
-  }
-}
-
-// For animation
-.slide-in-right {
-  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-20px);
-    opacity: 1;
   }
 }
 

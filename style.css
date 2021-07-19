@@ -242,7 +242,7 @@ h1 {
   height: 150px;
   margin: -75px 0 0 -75px;
   border-radius: 50%;
-  border: 3px solid transparent;
+  border: 8px solid transparent;
   border-top-color: var(--primary);
   -webkit-animation: spin 2s linear;
   /* Chrome, Opera 15+, Safari 5+ */
@@ -258,7 +258,7 @@ h1 {
   right: 5px;
   bottom: 5px;
   border-radius: 50%;
-  border: 3px solid transparent;
+  border: 8px solid transparent;
   border-top-color: var(--secondary);
   -webkit-animation: spin 3s linear;
   /* Chrome, Opera 15+, Safari 5+ */
@@ -274,7 +274,7 @@ h1 {
   right: 15px;
   bottom: 15px;
   border-radius: 50%;
-  border: 3px solid transparent;
+  border: 10px solid transparent;
   border-top-color: var(--tertiary);
   -webkit-animation: spin 1.5s linear;
   /* Chrome, Opera 15+, Safari 5+ */
@@ -331,7 +331,7 @@ h1 {
     opacity: 1;
   }
   75% {
-    opacity: 1;
+    opacity: .1;
   }
   100% {
     opacity: 0;
@@ -350,7 +350,7 @@ h1 {
     opacity: 1;
   }
   75% {
-    opacity: 1;
+    opacity: .1;
   }
   100% {
     opacity: 0;
@@ -677,7 +677,6 @@ h1 {
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
-  position: relative;
   margin-top: -4rem;
   border-radius: 20px 20px 0 0;
   background: var(--body-background);
@@ -752,9 +751,7 @@ h1 {
 }
 
 .menu__item:hover .menu__check {
-  border-radius: 0 20px 20px 0;
   margin-right: 0rem;
-  background: var(--tertiary);
 }
 
 .menu__item:hover .menu__check div {
@@ -794,6 +791,7 @@ h1 {
 
 .menu__check {
   transition: all 0.5s ease-in-out;
+  border-radius: 0 20px 20px 0;
   margin: -1rem 0 -1rem 0;
   padding: 22px 20px;
   margin-right: -4rem;
@@ -811,21 +809,6 @@ h1 {
 .menu__button {
   text-align: center;
   padding: 25px;
-}
-
-.slide-in-right {
-  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(-20px);
-    opacity: 1;
-  }
 }
 
 .animate {

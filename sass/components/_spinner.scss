@@ -17,7 +17,7 @@
   height: 150px;
   margin: -75px 0 0 -75px;
   border-radius: 50%;
-  border: 3px solid transparent;
+  border: 8px solid transparent;
   border-top-color: var(--primary);
   -webkit-animation: spin 2s linear; /* Chrome, Opera 15+, Safari 5+ */
   animation: spin 2s linear; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -30,7 +30,7 @@
     right: 5px;
     bottom: 5px;
     border-radius: 50%;
-    border: 3px solid transparent;
+    border: 8px solid transparent;
     border-top-color: var(--secondary);
     -webkit-animation: spin 3s linear; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 3s linear; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -44,7 +44,7 @@
     right: 15px;
     bottom: 15px;
     border-radius: 50%;
-    border: 3px solid transparent;
+    border: 10px solid transparent;
     border-top-color: var(--tertiary);
     -webkit-animation: spin 1.5s linear; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 1.5s linear; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -88,7 +88,7 @@
     opacity: 1;
   }
   75% {
-    opacity: 1;
+    opacity: .1;
   }
   100% {
     opacity: 0;
@@ -106,7 +106,7 @@
     opacity: 1;
   }
   75% {
-    opacity: 1;
+    opacity: .1;
   }
   100% {
     opacity: 0;
