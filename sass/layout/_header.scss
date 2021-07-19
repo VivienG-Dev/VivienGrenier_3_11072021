@@ -1,4 +1,4 @@
-#navbar {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,13 +9,24 @@
   box-shadow: -1px 4px 5px 0px rgba(209, 205, 209, 1);
 
   &__arrow {
-    position: absolute;
-    top: 35%;
-    left: 5%;
     font-size: 1.5rem;
   }
 
   &__logo {
+    margin: 0 23%;
+
+    @include tablets {
+      margin: 0 35%;
+    }
+
+    @include desktops {
+      margin: 0 40%;
+    }
+
+    @include large-desktops {
+      margin: 0 22%;
+    }
+
     a {
       color: var(--body-font);
       animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1)

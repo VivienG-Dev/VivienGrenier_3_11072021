@@ -174,7 +174,7 @@ h1 {
 }
 
 .hearts--empty:hover {
-  animation: fade-out .8s ease-out forwards;
+  animation: fade-out .4s ease-out forwards;
 }
 
 .hearts .single {
@@ -196,7 +196,7 @@ h1 {
 
 .hearts:hover .hearts--full {
   transform: scale(1);
-  transition: .4s linear;
+  transition: .2s linear;
 }
 
 .fade-out {
@@ -376,7 +376,7 @@ h1 {
   color: #018766;
 }
 
-#navbar {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -387,14 +387,33 @@ h1 {
   box-shadow: -1px 4px 5px 0px #d1cdd1;
 }
 
-#navbar__arrow {
-  position: absolute;
-  top: 35%;
-  left: 5%;
+.navbar__arrow {
   font-size: 1.5rem;
 }
 
-#navbar__logo a {
+.navbar__logo {
+  margin: 0 23%;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar__logo {
+    margin: 0 35%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar__logo {
+    margin: 0 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar__logo {
+    margin: 0 22%;
+  }
+}
+
+.navbar__logo a {
   color: var(--body-font);
   animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
@@ -431,6 +450,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--body-footer);
   background-color: var(--body-local);
   padding: 15px;
   font-size: .8rem;
@@ -606,6 +626,7 @@ h1 {
 
 .footer__links ul li {
   list-style: none;
+  color: #fff;
 }
 
 @media screen and (min-width: 992px) {
@@ -724,6 +745,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  cursor: pointer;
   box-shadow: -1px 0px 10px 1px rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: -1px 0px 10px 1px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: -1px 0px 10px 1px rgba(0, 0, 0, 0.05);

@@ -25,6 +25,7 @@
 
   &__links ul li {
     list-style: none;
+    color: #fff;
 
     @include desktops {
       display: inline-block;
